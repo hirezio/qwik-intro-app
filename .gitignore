@@ -10,7 +10,12 @@ node_modules
 # Cache
 .cache
 .mf
-.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 .rollup.cache
 tsconfig.tsbuildinfo
 
