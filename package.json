@@ -1,25 +1,47 @@
 {
   "name": "qwik-intro-app",
   "description": "Qwik Introduction App",
-  "engines": {
-    "node": ">=15.0.0"
-  },
   "private": true,
   "scripts": {
-    "build": "qwik build",
-    "build.client": "vite build",
-    "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.types": "tsc --incremental --noEmit",
-    "deploy": "echo 'Run \"npm run qwik add\" to install a server adaptor'",
+    "start": "vite --mode ssr --open",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+
+    "preview": "qwik build preview && vite preview --open",
+    "build": "qwik build",
+    "build.types": "tsc --incremental --noEmit",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+
+    "deploy": "echo 'Run \"npm run qwik add\" to install a server adaptor'",
+    
+    
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
-    "preview": "qwik build preview && vite preview --open",
-    "start": "vite --open --mode ssr",
+    
+    
     "qwik": "qwik"
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "devDependencies": {
     "@builder.io/qwik": "0.16.2",
     "@builder.io/qwik-city": "0.0.128",
@@ -36,5 +58,8 @@
     "undici": "5.14.0",
     "vite": "4.0.3",
     "vite-tsconfig-paths": "3.5.0"
+  },
+  "engines": {
+    "node": ">=15.0.0"
   }
 }

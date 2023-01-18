@@ -1,10 +1,10 @@
 header {
   display: flex;
   background: white;
-  border-bottom: 10px solid var(--qwik-dark-purple);
+ 
 }
 
-header .logo a {
+header .logo {
   display: inline-block;
   padding: 10px 10px 7px 20px;
 }
