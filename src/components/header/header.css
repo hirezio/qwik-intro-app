@@ -1,7 +1,7 @@
 header {
   display: flex;
-  background: white;
- 
+  margin-top: 20px;
+  border: var(--show-size) solid lightblue;
 }
 
 header .logo {

@@ -8,7 +8,7 @@ export default component$(() => {
     <header>
       <div class="logo">
         
-          <h3><a href="/">LOGO</a></h3>
+          <h3><a href="/">HEADER LOGO</a></h3>
         
       </div>
       <ul>
