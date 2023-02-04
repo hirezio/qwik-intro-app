@@ -22,6 +22,11 @@ export default component$(() => {
             Page 2
           </a>
         </li>
+        <li>
+          <a href="/page3">
+            Page 3
+          </a>
+        </li>
       </ul>
     </header>
   );
