@@ -1,3 +1,19 @@
 {
-  "stackblitz.autoStart": false
+  "window.zoomLevel": 3,
+  "workbench.statusBar.visible": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.activityBar.visible": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "editor.quickSuggestions": {
+    "strings": "off"
+  },
+  "editor.wordBasedSuggestions": false,
+  "html.suggest.html5": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.blame.highlight.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "explorer.excludeGitIgnore": false
 }

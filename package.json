@@ -6,7 +6,6 @@
     "start": "vite --mode ssr --open",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
-    "dev.nossr": "vite --open",
     "preview": "qwik build preview && vite preview --open",
     "build": "qwik build",
     "build.types": "tsc --incremental --noEmit",
