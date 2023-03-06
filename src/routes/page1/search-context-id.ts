@@ -5,4 +5,5 @@ export interface SearchContextState{
   messageSignal: Signal<string>;
   colorSignal: Signal<string>;
 }
+
 export const searchContextId = createContext<SearchContextState>('searchContext');

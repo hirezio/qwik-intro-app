@@ -1,4 +1,4 @@
-import { component$, Signal, Slot, useContext, useContextProvider, useResource$, useSignal, useTask$ } from '@builder.io/qwik';
+import { component$, Slot, useContext, useContextProvider, useSignal, useTask$ } from '@builder.io/qwik';
 import { beerContextId } from './beer-context-id';
 import { BeerSelector } from './beer-selector';
 
@@ -33,7 +33,7 @@ export default component$(() => {
 
 export const BeerGiver = component$(() => {
   return <div>
-    
+    <BeerSelector/>
     <hr/>
 
     <BeerGivingButton/>
@@ -54,6 +54,6 @@ export const Misko = component$(() => {
   return <div>
     <div>Hi I'm Misko Yayy</div>
     <Slot />
-    <BeerSelector/>
+    
   </div>;
 })
