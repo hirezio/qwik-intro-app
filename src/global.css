@@ -6,10 +6,11 @@
  *
  */
 
+
 :root {
   --dark-blue: #006ce9;
   --light-blue: #18b6f6;
-  --show-size: 5px;
+  --show-size: 5px; 
  }
 
 body {
@@ -78,19 +79,6 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-}
-
-table.commands {
-  margin: 0 0 30px 0;
-}
-
-.commands td {
-  padding: 5px;
-}
-
-.commands td:first-child {
-  white-space: nowrap;
-  padding-right: 20px;
 }
 
 code {

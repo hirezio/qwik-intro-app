@@ -1,7 +1,26 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useContextProvider, useSignal, useTask$ } from '@builder.io/qwik';
+import { Projector } from './projector';
+import { searchContextId } from './search-context-id';
 
 export default component$(() => {
+  const messageSignal = useSignal('');
+  const colorSignal = useSignal('black');
 
+  useContextProvider(searchContextId, {
+    messageSignal,
+    colorSignal
+  });
+
+  
+
+  useTask$(({ track }) => {
+    track(() => messageSignal.value);
+    if (messageSignal.value.indexOf('llama') !== -1) {
+      colorSignal.value = 'red';
+    } else {
+      colorSignal.value = 'black';
+    }
+  });
   
 
   return <div>
@@ -10,12 +29,15 @@ export default component$(() => {
     <hr />
     
     <input type="text" placeholder="Type your search"
-      onKeyDown$={(event) => {
-        console.log(event.key);
+      onInput$={(event) => {
+        messageSignal.value = (event.target as HTMLInputElement).value;
       }}/>
     
     <hr />
     
-    <div>You typed: </div>
+    <Projector />
+    
+    
+
   </div>
 });

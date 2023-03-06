@@ -1,4 +1,5 @@
 {
+  "css.lint.unknownAtRules": "ignore",
   "window.zoomLevel": 3,
   "workbench.statusBar.visible": false,
   "explorer.openEditors.visible": 0,
