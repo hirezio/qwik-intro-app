@@ -9,6 +9,7 @@ export const BeerSelector = component$(() => {
 
   useStylesScoped$(styles);
 
+
   const beersResource = useResource$<Beer[]>(async () => {
     const result = await fetch('http://localhost:5173/api/beers');
     return result.json();
