@@ -1,5 +1,4 @@
 import { component$, useSignal, useTask$ } from '@builder.io/qwik';
-import { validateHeaderName } from 'http';
 import { Projector } from './projector';
 
 export default component$(() => {
@@ -10,7 +9,6 @@ export default component$(() => {
   useTask$(({ track }) => {
     track(() => messageSignal.value);
 
-    
     if (messageSignal.value.indexOf('llama') !== -1) {
       colorSignal.value = 'red';
     } else {
@@ -26,8 +24,7 @@ export default component$(() => {
     <hr />
     
     <input type="text" placeholder="Type your search"
-      value={messageSignal.value}
-      onInput$={(event: InputEvent) => {
+        onInput$={(event) => {
         messageSignal.value = (event.target as HTMLInputElement).value;
       }}/>
     

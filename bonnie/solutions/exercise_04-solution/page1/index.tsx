@@ -11,8 +11,7 @@ export default component$(() => {
     <hr />
     
     <input type="text" placeholder="Type your search"
-      value={messageSignal.value}
-      onInput$={(event: InputEvent) => {
+      onInput$={(event) => {
         messageSignal.value = (event.target as HTMLInputElement).value;
       }}/>
     
